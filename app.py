@@ -87,7 +87,8 @@ def predict():
     except Exception as e:
         # handle any error that occurs during processing
         return jsonify({'error': str(e)})
-
+    
+    
 # start the Flask application
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0")
